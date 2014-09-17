@@ -36,7 +36,12 @@
 */
 
 #include <stdio.h>
+
+// gcc on osx does not need this
+#ifdef BORLAND
 #include <malloc.h>
+#endif
+
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
